@@ -1,118 +1,3 @@
-/* 
-    Font size system (px):
-        10 12 14 16 18 20 24 30 36 44 52 62 74 86 98
-    Font Weight:
-        Light: 500
-        Medium: 600
-        Bold: 700
-    Letter spacing:
-        -0.5px
-        1.3px
-    Line Height:
-        1
-        1.05
-    Spacing system:
-        2 4 8 12 16 24 32 48 64 80 96 128
-    Colors
-        Primary: #e67e22
-        Accent:
-        Gray:
-    Tints and Shades:
-        Tints: #fdf2e9 #fae5d3 #f8d8bd #eea564
-        Shades: #a15818 #5c320e #170d03 #cf711f
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: "Rubik", sans-serif;
-    font-size: 1.6rem;
-}
-
-.primary-header,
-.secondary-header,
-.tertiary-header {
-    line-height: 1.05;
-    letter-spacing: -0.5px;
-    font-weight: 700;
-}
-
-.primary-header {
-    font-size: 5.2rem;
-    margin-bottom: 3.2rem;
-}
-
-.secondary-header {
-    font-size: 4.4rem;
-    margin-bottom: 1.6rem;
-}
-
-.tertiary-header {
-    font-size: 2.4rem;
-    margin-bottom: 1.2rem;
-}
-
-.btn:link,
-.btn:visited {
-    text-decoration: none;
-    padding: 1.6rem 3.2rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all .3s;
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: #e67e22;
-    color: white;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-    background-color: #cf711f;
-}
-
-.btn-secondary:link,
-.btn-secondary:visited {
-    background-color: white;
-    color: #333;
-    border: 3px solid transparent;
-}
-
-.btn-secondary:hover,
-.btn-secondary:active {
-    background-color: #fdf2e9;
-    box-shadow: inset 0 0 0 3px white;
-}
-
-.mr-sm {
-    margin-right: 1.6rem !important;   
-}
-
-.mt-lg {
-    margin-top: 9.6rem !important;
-}
-
-.pb-lg {
-    padding-bottom: 9.6rem !important;
-}
-
-.pt-lg {
-    padding-top: 5rem;
-}
-
 /* HEADER Start */
 .header {
     display: flex;
@@ -209,10 +94,6 @@ body {
 /* HERO End */
 
 /* STEPS Start */
-.steps {
-    padding: 2.4rem 4.8rem;
-}
-
 .steps-header {
     padding: 0 4.8rem;
 }
@@ -224,24 +105,15 @@ body {
     color: #cf711f;
 }
 
-.steps-content {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 6.4rem;
-    column-gap: 4.8rem;
-}
-
-.steps-content img {
-    width: 35%;
-}
-
 .step-img {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.step-img img {
+    width: 35%;
 }
 
 .step-img::before,
@@ -288,3 +160,114 @@ body {
 }
 
 /* STEPS End */
+
+/* FEATURED IN Start */
+.featured-in-header {
+    text-align: center;
+}
+
+.featured-in-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featured-in-images img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+.featured-in-header .steps-description {
+    display: block;
+    color: #999;
+    margin-bottom: 3.2rem;
+}
+/* FEATURED IN End */
+
+/* TESTIMONIALS Start */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 4.8rem;
+    column-gap: 3.2rem;
+}
+.testimonials-gallery {
+    background-color: #fdf2e9;
+}
+
+.testimonials-body figure {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.author-img img {
+    max-width: 20%;
+    border-radius: 50%;
+}
+
+.author-testimonial {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+}
+
+.author-info {
+    font-size: 1.4rem;
+    color: #888;
+}
+/* TESTIMONIALS End */
+
+/* GALLERY Start */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+}
+
+.gallery-img {
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+/* GALLERY End */
+
+/* MEALS Start */
+.meals-header {
+    text-align: center;
+}
+
+.meals-header span {
+    display: block;
+    margin-bottom: 2.4rem;
+}
+
+.meals-recipes {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #e67e22;
+    letter-spacing: 1.05px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding: .4rem;
+}
+
+.meals-recipes:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.meals-footer {
+    text-align: center;
+}
+/* MEALS End */
