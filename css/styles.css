@@ -18,7 +18,7 @@
         Accent:
         Gray:
     Tints and Shades:
-        Tints: #fdf2e9 #f8d8bd #eea564
+        Tints: #fdf2e9 #fae5d3 #f8d8bd #eea564
         Shades: #a15818 #5c320e #170d03 #cf711f
 
 */
@@ -238,17 +238,35 @@ body {
 }
 
 .step-img {
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.step-img img::before {
+.step-img::before,
+.step-img::after {
     content: "";
-    display: inline-block;
+    display: block;
     position: absolute;
-    width: 60%;
-    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.step-img::before {
     background-color: #fdf2e9;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2;
+}
+
+.step-img::after {
+    background-color: #fae5d3;
+    width: 50%;
+    padding-bottom: 50%;
+    z-index: -1;
 }
 
 .step-no {
