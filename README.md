@@ -1,3 +1,3 @@
 # Omnifood
 
-Projekti i perbashket ne PBCA.
+Projekti i perbashket frontend ne PBCA.
