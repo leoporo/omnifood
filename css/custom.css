@@ -277,9 +277,14 @@
     overflow: hidden;
     max-width: 70%;
     box-shadow: 0 0 3px rgba(51, 51, 51, .3);
+    transition: all .4s ease;
 }
 
-.meals-recipe:first {
+.meals-recipe:hover {
+    transform: translateY(-1rem);
+}
+
+.meals-recipe.first {
     justify-self: end;
 }
 
