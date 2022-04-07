@@ -537,10 +537,11 @@ form .btn.btn-custom {
     background-color: #45260a;
     color: #fdf2e9;
     transition: all .3s;
+    cursor: pointer;
 }
 
 form .btn.btn-custom:hover {
-    background-color: red;
+    background-color: #a15818;
 }
 
 .cta-img {
@@ -553,5 +554,42 @@ form .btn.btn-custom:hover {
 /* FOOTER Start */
 .footer {
     border-top: 1px solid rgba(51,51,51,.1);
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 4.8rem;
+}
+
+.footer-logo-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: start;
+    height: 100%;
+}
+
+.footer-logo img {
+    width: 60%;
+    margin-bottom: 2.4rem;
+}
+
+.footer-address,
+.footer-email {
+    line-height: 1.9;
+}
+
+.footer-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2rem;
+    align-self: start;
+}
+
+.footer-header {
+    font-weight: 500;
+}
+
+.footer-list {
+    line-height: 2.4;
 }
 /* FOOTER End */
