@@ -19,7 +19,7 @@
         Gray:
     Tints and Shades:
         Tints: #fdf2e9 #fae5d3 #f8d8bd #eea564
-        Shades: #a15818 #5c320e #170d03 #cf711f
+        Shades: #a15818 #5c320e #170d03 #cf711f #eb984e
 
 */
 
@@ -62,6 +62,7 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   text-decoration: none;
