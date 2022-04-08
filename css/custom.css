@@ -234,7 +234,7 @@
     width: 100%;
     height: 100%;
     transition: all .3s;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .gallery img:hover {
@@ -547,6 +547,7 @@ form .btn.btn-custom:hover {
 .cta-img {
     background-image: url(../img/eating.jpg);
     background-size: cover;
+    background-position: center;
     opacity: .7;
 }
 /* CTA End */
@@ -568,8 +569,19 @@ form .btn.btn-custom:hover {
 }
 
 .footer-logo img {
-    width: 60%;
+    width: 75%;
     margin-bottom: 2.4rem;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.footer ion-icon {
+    color: #333;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .footer-address,
@@ -591,5 +603,21 @@ form .btn.btn-custom:hover {
 
 .footer-list {
     line-height: 2.4;
+}
+
+.footer-list a:link,
+.footer-list a:visited,
+.footer-email a:link,
+.footer-email a:visited
+ {
+    text-decoration: none;
+    color: #999;
+}
+
+.footer-list a:hover,
+.footer-list a:active,
+.footer-email a:hover,
+.footer-email a:active {
+    color: #333;
 }
 /* FOOTER End */
