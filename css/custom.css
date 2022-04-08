@@ -526,6 +526,11 @@ form label {
     border: none;
 }
 
+.form-control input::placeholder {
+    color: #45260a;
+    font-family: inherit;
+}
+
 .form-control:last-child {
     align-self: end;
 }
