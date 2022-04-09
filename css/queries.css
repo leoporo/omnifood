@@ -1,0 +1,86 @@
+@media (min-width: 1400px) {
+  .hero-section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 47%;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    width: 90%;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+    column-gap: 3.2rem;
+  }
+
+  .meals-body.grid {
+    column-gap: 1.8rem;
+  }
+
+  .customers {
+    gap: 0px;
+  }
+
+  .gallery {
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .meals-body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .meals-recipe.first {
+    justify-self: center;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-form form {
+     display: flex;
+     flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .steps-content,
+  .meals-body {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-two {
+    grid-row: 4;
+  }
+
+  .meals-recipe.first {
+    justify-self: center;
+  }
+
+  .features {
+      grid-template-columns: 1fr;
+  }
+}
