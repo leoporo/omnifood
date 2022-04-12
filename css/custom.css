@@ -65,6 +65,16 @@
     margin-bottom: 3rem;
 }
 
+.hero-links {
+    display: flex;
+    width: 100%;
+}
+
+.hero-links .btn {
+    display: flex;
+    align-items: center;   
+}
+
 .customers {
     display: flex;
     align-items: center;
@@ -166,11 +176,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .featured-in-images img {
-    height: 3.2rem;
+    width: 20%;
     filter: brightness(0);
     opacity: 50%;
 }
