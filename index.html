@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/queries.css" />
   </head>
   <body>
-    <header class="open-nav">
+    <header>
       <div class="header">
         <div class="logo">
           <img src="./img/omnifood-logo.png" alt="Omnifood Logo" />
@@ -27,8 +27,8 @@
         </div>
 
          <div class="mobile-nav">
-            <ion-icon name="menu-outline" class="nav-open-btn"></ion-icon>
-            <ion-icon name="close-outline" class="nav-close-btn"></ion-icon>
+            <ion-icon name="menu-outline" class="nav-btn"></ion-icon>
+            <ion-icon name="close-outline" class="nav-btn"></ion-icon>
           </div>
       </div>
     </header>
@@ -46,7 +46,7 @@
               nutritional needs.
             </p>
             <div class="hero-links">
-              <a class="btn btn-primary mr-sm" href="#">Start eating well</a>
+              <a id="start" class="btn btn-primary mr-sm" href="#">Start eating well</a>
               <a class="btn btn-secondary" href="#">Learn more&darr;</a>
             </div>
             <div class="customers mt-lg">
@@ -500,7 +500,7 @@
               <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
             </div>
           </div>
-          <div><p>Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.</p></div>
+          <div><p>Copyright &copy; <span id="currentYear"></span> by Omnifood, Inc. All rights reserved.</p></div>
         </div>
         <div class="footer-grid-item contact-grid-item">
           <h3 class="footer-header">Contact us</h3>
@@ -551,14 +551,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <script>
-      document.querySelector(".nav-open-btn").addEventListener("click", function() {
-        document.querySelector("header").classList.add("open-nav");
-      });
-
-      document.querySelector(".nav-close-btn").addEventListener("click", function() {
-        document.querySelector("header").classList.remove("open-nav");
-      });
-    </script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>
